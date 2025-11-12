@@ -71,37 +71,6 @@ def test_generate():
 
 # Part 2: Advanced Features (Bonus)
 
-# def test_count_solutions():
-#     """Test whether the count_solutions method correctly counts the number of solutions"""
-#     unique_puzzle = [
-#         [5, 3, 0, 0, 7, 0, 0, 0, 0],
-#         [6, 0, 0, 1, 9, 5, 0, 0, 0],
-#         [0, 9, 8, 0, 0, 0, 0, 6, 0],
-#         [8, 0, 0, 0, 6, 0, 0, 0, 3],
-#         [4, 0, 0, 8, 0, 3, 0, 0, 1],
-#         [7, 0, 0, 0, 2, 0, 0, 0, 6],
-#         [0, 6, 0, 0, 0, 0, 2, 8, 0],
-#         [0, 0, 0, 4, 1, 9, 0, 0, 5],
-#         [0, 0, 0, 0, 8, 0, 0, 7, 9]
-#     ]
-#     board = SudokuBoard(unique_puzzle)
-#     assert board.count_solutions() == 1, "This puzzle should have exactly 1 solution"
-    
-#     no_solution_puzzle = [
-#         [1, 1, 0, 0, 0, 0, 0, 0, 0],
-#         [0, 0, 0, 0, 0, 0, 0, 0, 0],
-#         [0, 0, 0, 0, 0, 0, 0, 0, 0],
-#         [0, 0, 0, 0, 0, 0, 0, 0, 0],
-#         [0, 0, 0, 0, 0, 0, 0, 0, 0],
-#         [0, 0, 0, 0, 0, 0, 0, 0, 0],
-#         [0, 0, 0, 0, 0, 0, 0, 0, 0],
-#         [0, 0, 0, 0, 0, 0, 0, 0, 0],
-#         [0, 0, 0, 0, 0, 0, 0, 0, 0]
-#     ]
-#     board2 = SudokuBoard(no_solution_puzzle)
-#     assert board2.count_solutions() == 0, "Invalid puzzle should have 0 solutions"
-
-
 def test_generate_unique_solution():
     """Test generate_unique produces puzzles with a unique solution - Bonus 2.1"""
 
@@ -240,7 +209,7 @@ def test_validate_puzzle():
     
     # Test 5: Invalid number range
     invalid_number = [
-        [10, 0, 0, 0, 0, 0, 0, 0, 0],  # 10 is out of range
+        [10, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
